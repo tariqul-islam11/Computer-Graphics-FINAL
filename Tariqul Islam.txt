@@ -1,0 +1,322 @@
+//sun
+void Sun()
+{
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 92, 51);
+	for(int i=0;i<2000;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/2000;
+		float r=40;
+		float x = 620+r * cos(A);
+		float y = 930+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+}
+
+ //Moon
+
+ void Moon()
+{
+    glBegin(GL_POLYGON);
+    glColor3ub(255,255,0);
+	for(int i=0;i<2000;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/2000;
+		float r=40;
+		float x = 620+r * cos(A);
+		float y = 930+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+}
+
+
+
+
+///cloud initial positions
+float cloud1_position=0.0;
+float cloud2_position=0.0;
+float cloud3_position=0.0;
+
+
+
+///cloud1 starts here
+void Cloud1()
+{
+ glPushMatrix();
+ glTranslatef(cloud1_position,0,0);
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 450+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x-350,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<350;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 440+r * cos(A);
+		float y = 940+r * sin(A);
+		glVertex2f(x-350,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 490+r * cos(A);
+		float y = 950+r * sin(A);
+		glVertex2f(x-350,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 510+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x-350,y );
+	}
+	glEnd();
+
+	glPopMatrix();
+}
+///cloud1 ends
+
+
+///cloud2 starts
+void Cloud2()
+{
+ glPushMatrix();
+ glTranslatef(cloud2_position,0,0);
+    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 450+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 440+r * cos(A);
+		float y = 940+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 490+r * cos(A);
+		float y = 950+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 510+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x,y );
+	}
+	glEnd();
+
+	    glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 450+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x-125,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 440+r * cos(A);
+		float y = 940+r * sin(A);
+		glVertex2f(x-125,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 490+r * cos(A);
+		float y = 950+r * sin(A);
+		glVertex2f(x-125,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(255, 255, 255);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 510+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x-125,y );
+	}
+	glEnd();
+	glPopMatrix();
+}
+///cloud2 ends here
+
+
+///cloud3 starts
+void Cloud3()
+{
+ glPushMatrix();
+ glTranslatef(cloud3_position,0,0);
+    glBegin(GL_POLYGON);
+    glColor3ub(234, 237, 237);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 450+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x+400,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(234, 237, 237);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 440+r * cos(A);
+		float y = 940+r * sin(A);
+		glVertex2f(x+400,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(234, 237, 237);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 490+r * cos(A);
+		float y = 950+r * sin(A);
+		glVertex2f(x+400,y );
+	}
+	glEnd();
+
+	glBegin(GL_POLYGON);
+    glColor3ub(234, 237, 237);
+	for(int i=0;i<200;i++)
+	{
+		float pi=3.1416;
+		float A=(i*2*pi)/200;
+		float r=40;
+		float x = 510+r * cos(A);
+		float y = 900+r * sin(A);
+		glVertex2f(x+400,y );
+	}
+	glEnd();
+	glPopMatrix();
+}
+///cloud3 ends here
+
+
+///cloud1-update
+void UpdateCloud1(int value)
+{
+    cloud1_position += 10;
+    if(cloud1_position > 1000)
+    {
+        cloud1_position = -200.0f;
+    }
+
+	glutPostRedisplay();
+
+	glutTimerFunc(25, UpdateCloud1, 0);
+}
+
+///cloud2-update
+void UpdateCloud2(int value)
+{
+    cloud2_position += 2;
+    if(cloud2_position > 1000)
+    {
+        cloud2_position = -600.0f;
+    }
+
+	glutPostRedisplay();
+
+	glutTimerFunc(30, UpdateCloud2, 0);
+}
+
+///cloud3-update
+void UpdateCloud3(int value)
+{
+    cloud3_position -= 5;
+    if(cloud3_position <-1000)
+    {
+        cloud3_position = 200.0f;
+    }
+
+	glutPostRedisplay();
+
+	glutTimerFunc(25, UpdateCloud3, 0);
+}
